@@ -1,0 +1,1133 @@
+File: C:\INTERPOSER_DATA.txt						
+Date: Tue Aug 07 12:00:00 2018						
+"Units: microns, 2 decimal places"						
+Name: INTERPOSER						
+DEF Design: DIE						
+RefDes: INTERPOSER						
+DieType: Flipchip						
+DieOrient: ChipDown						
+Origin: (0.00 0.00)						
+Rotation: 0.000						
+Extents: ((-900.00 -900.00) (900.00 900.00))						
+						
+Pin Number	Padstack	X Coord	Y Coord	Rotation	Pin Use	Net Name
+1	IPSR_PAD	-810.00	810.00	0	BI	DEBUG_O_4
+2	IPSR_PAD	-630.00	810.00	0	BI	DEBUG_O_6
+3	IPSR_PAD	-450.00	810.00	0	BI	DEBUG_O_8
+4	IPSR_PAD	-270.00	810.00	0	BI	HID_3
+5	IPSR_PAD	-90.00	810.00	0	BI	HID_2
+6	IPSR_PAD	90.00	810.00	0	BI	HID_1
+7	IPSR_PAD	270.00	810.00	0	BI	IPSR_DUM_1
+8	IPSR_PAD	450.00	810.00	0	BI	DEBUG_I_1
+9	IPSR_PAD	630.00	810.00	0	BI	DEBUG_I_3
+10	IPSR_PAD	810.00	810.00	0	BI	DEBUG_I_5
+11	IPSR_PAD	-810.00	630.00	0	BI	DEBUG_O_3
+12	IPSR_PAD	-630.00	630.00	0	BI	DEBUG_O_5
+13	IPSR_PAD	-450.00	630.00	0	BI	DEBUG_O_7
+14	IPSR_PAD	-270.00	630.00	0	BI	IPSR_DUM_3
+15	IPSR_PAD	-90.00	630.00	0	GROUND	VSS
+16	IPSR_PAD	90.00	630.00	0	POWER	VDD
+17	IPSR_PAD	270.00	630.00	0	BI	IPSR_DUM_2
+18	IPSR_PAD	450.00	630.00	0	BI	DEBUG_I_2
+19	IPSR_PAD	630.00	630.00	0	BI	DEBUG_I_4
+20	IPSR_PAD	810.00	630.00	0	BI	DEBUG_I_6
+21	IPSR_PAD	-810.00	450.00	0	BI	DEBUG_O_2
+22	IPSR_PAD	-630.00	450.00	0	GROUND	VSS
+23	IPSR_PAD	-450.00	450.00	0	POWER	VDD
+24	IPSR_PAD	-270.00	450.00	0	GROUND	VSS
+25	IPSR_PAD	-90.00	450.00	0	POWER	VDD
+26	IPSR_PAD	90.00	450.00	0	GROUND	VSS
+27	IPSR_PAD	270.00	450.00	0	POWER	VDD
+28	IPSR_PAD	450.00	450.00	0	GROUND	VSS
+29	IPSR_PAD	630.00	450.00	0	POWER	VDD
+30	IPSR_PAD	810.00	450.00	0	BI	DEBUG_I_7
+31	IPSR_PAD	-810.00	270.00	0	BI	DEBUG_O_1
+32	IPSR_PAD	-630.00	270.00	0	POWER	VDD
+33	IPSR_PAD	-450.00	270.00	0	GROUND	VSS
+34	IPSR_PAD	-270.00	270.00	0	POWER	VDD
+35	IPSR_PAD	-90.00	270.00	0	GROUND	VSS
+36	IPSR_PAD	90.00	270.00	0	POWER	VDD
+37	IPSR_PAD	270.00	270.00	0	GROUND	VSS
+38	IPSR_PAD	450.00	270.00	0	POWER	VDD
+39	IPSR_PAD	630.00	270.00	0	GROUND	VSS
+40	IPSR_PAD	810.00	270.00	0	BI	DEBUG_I_8
+41	IPSR_PAD	-810.00	90.00	0	BI	DRESET
+42	IPSR_PAD	-630.00	90.00	0	GROUND	VSS
+43	IPSR_PAD	-450.00	90.00	0	POWER	VDD
+44	IPSR_PAD	-270.00	90.00	0	GROUND	VSS
+45	IPSR_PAD	-90.00	90.00	0	BI	RESET
+46	IPSR_PAD	90.00	90.00	0	GROUND	VSS
+47	IPSR_PAD	270.00	90.00	0	POWER	VDD
+48	IPSR_PAD	450.00	90.00	0	GROUND	VSS
+49	IPSR_PAD	630.00	90.00	0	POWER	VDD
+50	IPSR_PAD	810.00	90.00	0	BI	DCLK
+51	IPSR_PAD	-810.00	-90.00	0	BI	E_ID_O_2
+52	IPSR_PAD	-630.00	-90.00	0	POWER	VDD
+53	IPSR_PAD	-450.00	-90.00	0	GROUND	VSS
+54	IPSR_PAD	-270.00	-90.00	0	POWER	VDD
+55	IPSR_PAD	-90.00	-90.00	0	GROUND	VSS
+56	IPSR_PAD	90.00	-90.00	0	BI	CLK
+57	IPSR_PAD	270.00	-90.00	0	GROUND	VSS
+58	IPSR_PAD	450.00	-90.00	0	POWER	VDD
+59	IPSR_PAD	630.00	-90.00	0	GROUND	VSS
+60	IPSR_PAD	810.00	-90.00	0	BI	E_ID_I_1
+61	IPSR_PAD	-810.00	-270.00	0	BI	E_ID_O_1
+62	IPSR_PAD	-630.00	-270.00	0	GROUND	VSS
+63	IPSR_PAD	-450.00	-270.00	0	POWER	VDD
+64	IPSR_PAD	-270.00	-270.00	0	GROUND	VSS
+65	IPSR_PAD	-90.00	-270.00	0	POWER	VDD
+66	IPSR_PAD	90.00	-270.00	0	GROUND	VSS
+67	IPSR_PAD	270.00	-270.00	0	POWER	VDD
+68	IPSR_PAD	450.00	-270.00	0	GROUND	VSS
+69	IPSR_PAD	630.00	-270.00	0	POWER	VDD
+70	IPSR_PAD	810.00	-270.00	0	BI	E_ID_I_2
+71	IPSR_PAD	-810.00	-450.00	0	BI	E_F_O
+72	IPSR_PAD	-630.00	-450.00	0	POWER	VDD
+73	IPSR_PAD	-450.00	-450.00	0	GROUND	VSS
+74	IPSR_PAD	-270.00	-450.00	0	POWER	VDD
+75	IPSR_PAD	-90.00	-450.00	0	GROUND	VSS
+76	IPSR_PAD	90.00	-450.00	0	POWER	VDD
+77	IPSR_PAD	270.00	-450.00	0	GROUND	VSS
+78	IPSR_PAD	450.00	-450.00	0	POWER	VDD
+79	IPSR_PAD	630.00	-450.00	0	GROUND	VSS
+80	IPSR_PAD	810.00	-450.00	0	BI	E_F_I
+81	IPSR_PAD	-810.00	-630.00	0	BI	E_O_10
+82	IPSR_PAD	-630.00	-630.00	0	BI	E_O_9
+83	IPSR_PAD	-450.00	-630.00	0	BI	E_O_8
+84	IPSR_PAD	-270.00	-630.00	0	BI	E_O_7
+85	IPSR_PAD	-90.00	-630.00	0	BI	E_O_6
+86	IPSR_PAD	90.00	-630.00	0	BI	E_O_5
+87	IPSR_PAD	270.00	-630.00	0	BI	E_O_4
+88	IPSR_PAD	450.00	-630.00	0	BI	E_O_3
+89	IPSR_PAD	630.00	-630.00	0	BI	E_O_2
+90	IPSR_PAD	810.00	-630.00	0	BI	E_O_1
+91	IPSR_PAD	-810.00	-810.00	0	BI	E_I_1
+92	IPSR_PAD	-630.00	-810.00	0	BI	E_I_2
+93	IPSR_PAD	-450.00	-810.00	0	BI	E_I_3
+94	IPSR_PAD	-270.00	-810.00	0	BI	E_I_4
+95	IPSR_PAD	-90.00	-810.00	0	BI	E_I_5
+96	IPSR_PAD	90.00	-810.00	0	BI	E_I_6
+97	IPSR_PAD	270.00	-810.00	0	BI	E_I_7
+98	IPSR_PAD	450.00	-810.00	0	BI	E_I_8
+99	IPSR_PAD	630.00	-810.00	0	BI	E_I_9
+100	IPSR_PAD	810.00	-810.00	0	BI	E_I_10
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						

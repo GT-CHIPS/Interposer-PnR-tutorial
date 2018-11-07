@@ -1,0 +1,3 @@
+source env
+
+cdnsip -product SiP_Layout_XL tutorial.sip -s ../script/sip_script/import_all.scr 
