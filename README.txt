@@ -21,9 +21,10 @@ in this directory.
 The detail of the interposer technology is as below:
 - 65nm silicon interposer
 - metal layer #: 4
-- metal w/s: 0.4um/0.4um
-- u-bump diameter/pitch: 20um/40um
-- C4 bump diameter/pitch: 90um/180um
+- metal min. width/pitch: 0.4um/0.8um
+- u-bump diameter/min. pitch: 20um/40um
+- C4 bump diameter/min. pitch: 90um/180um
+- PDN mesh width/pitch: 40um/90um
 
 
 ===========================================================
@@ -68,14 +69,16 @@ Quick start
 
 	bash ./script/bash_script/make_sip_script.sh
 
-	- This will generate SiP scripts for importing the techfile, the chiplet placement, and the grid setting.
+	- This will generate SiP scripts for importing the techfile, the chiplet placement, and the grid setting in
+	  ./script/sip_script directory.
 
 	bash ./script/bash_script/make_vdd_script.sh
 	bash ./script/bash_script/make_vss_script.sh
 	bash ./script/bash_script/make_vdd_via.sh
 	bash ./script/bash_script/make_vss_line.sh
 	
-	- These will generate SiP scripts for PDN generation, VDD and VSS (please run the script for VDD first).
+	- These will generate SiP scripts for PDN generation, VDD and VSS in ./script/PDN_script directory 
+	  (please run the script for VDD first).
 
 2. Copy all via definition files into ./design directory.
 	cp ./via_data/* ./design/
