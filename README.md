@@ -69,24 +69,21 @@ Quick start
 	* bash ./script/bash_script/make_techfile.sh
 	  - This will generate the techfile in ./script/techfile directory.
 
-	bash ./script/bash_script/make_sip_script.sh
+	* bash ./script/bash_script/make_sip_script.sh
+  	  - This will generate SiP scripts for importing the techfile, the chiplet placement, and the grid setting.
 
-	- This will generate SiP scripts for importing the techfile, the chiplet placement, and the grid setting.
-
-	bash ./script/bash_script/make_vdd_script.sh
-	bash ./script/bash_script/make_vss_script.sh
-	bash ./script/bash_script/make_vdd_via.sh
-	bash ./script/bash_script/make_vss_line.sh
-	
-	- These will generate SiP scripts for PDN generation, VDD and VSS (please run the script for VDD first).
+	* bash ./script/bash_script/make_vdd_script.sh
+	* bash ./script/bash_script/make_vss_script.sh
+	* bash ./script/bash_script/make_vdd_via.sh
+	* bash ./script/bash_script/make_vss_line.sh
+	  - These will generate SiP scripts for PDN generation, VDD and VSS (please run the script for VDD first).
 
 2. Copy all via definition files into ./design directory.
-	cp ./via_data/* ./design/
+	* cp ./via_data/* ./design/
 
 3. Run the sciprt from ./design directory.
-	source :run_sip
-
-	- This will execute Cadence SiP Layout XL,
+	* source :run_sip
+	  - This will execute Cadence SiP Layout XL,
 		    import the techfile,
 		    modify the grid setting,
 		    import the information of chiplets and run the placement.
@@ -94,83 +91,83 @@ Quick start
 4. Change 'Active Class and Subclass' from 'Substarte Geometry' to 'Conductor' in 'Options' tab.
 
 5. Create fanouts on the interposer.
-	a) Route -> Create Fanout
-	b) In 'Options' tab,
-		i)  Start layer	: M4
-		ii) End layer	: Ubm
-		iii)Via		: TSV
-		iV) Via Direction: Via in Pad
-	c) Click any C4 bump on the interposer.
-	d) Type 'done' in the command window.
+	* Route -> Create Fanout
+	* In 'Options' tab,
+	  -  Start layer	: M4
+	  - End layer	: Ubm
+	  - Via		: TSV
+	  - Via Direction: Via in Pad
+	* Click any C4 bump on the interposer.
+	* Type 'done' in the command window.
 
 6. Type the following commands in the command window to generate PDN mesh.
-	a) replay ../script/PDN_script/add_vdd_mesh.scr
-	b) replay ../script/PDN_script/add_vss_mesh.scr
+	* replay ../script/PDN_script/add_vdd_mesh.scr
+	* replay ../script/PDN_script/add_vss_mesh.scr
 
 7. Type the following commands in the command window to add power connections from the interposer to PDN.
-	a) replay ../script/PDN_script/add_vdd_via.scr
-	b) replay ../script/PDN_script/add_vss_line.scr
+	* replay ../script/PDN_script/add_vdd_via.scr
+	* replay ../script/PDN_script/add_vss_line.scr
 
 8. Run Automatic Router.
-	Route -> Router -> Route Automatic
+	* Route -> Router -> Route Automatic
 
 9. Setup Automatic Router options.
-	a) 'Router Setup' tab.
-		i) 'Options' section
-			- Check 'Limit wraparounds'
-			- Check 'Protect existing routes'
-		ii) Metal layer selection (check Protect as well).
-			- M1/M2/M3/M4
-	b) 'Selections' tab.
-		i) Objects to route:
-			- All but selected
-		ii) Move the following objects into 'Selected Objects'.
-			- VDD
-			- VSS
+	* 'Router Setup' tab.
+	  - 'Options' section
+	    * Check 'Limit wraparounds'
+	    * Check 'Protect existing routes'
+	  - Metal layer selection (check Protect as well).
+	    * M1/M2/M3/M4
+	* 'Selections' tab.
+	  - Objects to route:
+	    * All but selected
+	  - Move the following objects into 'Selected Objects'.
+	    * VDD
+	    * VSS
 
 10. Click 'Route' to run Automatic Router and click 'Close' after routing.
-	- Automatic Router performs the signal routing in Manhattan routing.
+	* Automatic Router performs the signal routing in Manhattan routing.
 
 11. VDD routing.
-	a) Open 'Cross Section Editor'.
-		Setup -> Cross-section
-	b) Change layer name 'M3' to 'VDD'.
-	c) Change layer type from 'Conductor' to 'Plane'.
-	d) Click 'OK'.
-	e) Run Automatic Router.
-		i) 'Selections' tab.
-			- Objects to route: All selected
-			- Move 'VDD' into 'Selected Objects'.
-		ii) Click 'Route' to run Automatic Router and click 'Close' after routing.
-	f) Open 'Cross Section Editor'.
-		Setup -> Cross-section
-	g) Change layer name 'VDD' to 'M3'.
-	h) Change layer type from 'Plane' to 'Conductor'.
-	i) Click 'OK'.
+	* Open 'Cross Section Editor'.
+	  - Setup -> Cross-section
+	* Change layer name 'M3' to 'VDD'.
+	* Change layer type from 'Conductor' to 'Plane'.
+	* Click 'OK'.
+	* Run Automatic Router.
+	  - 'Selections' tab.
+	    * Objects to route: All selected
+	    * Move 'VDD' into 'Selected Objects'.
+	  - Click 'Route' to run Automatic Router and click 'Close' after routing.
+	* Open 'Cross Section Editor'.
+	  - Setup -> Cross-section
+	* Change layer name 'VDD' to 'M3'.
+	* Change layer type from 'Plane' to 'Conductor'.
+	* Click 'OK'.
 
 12. VSS routing.
-	a) Open 'Cross Section Editor'.
-		Setup -> Cross-section
-	b) Change layer name 'M4' to 'VSS'.
-	c) Change layer type from 'Conductor' to 'Plane'.
-	d) Click 'OK'.
-	e) Run Automatic Router.
-		i) 'Selections' tab.
-			- Objects to route: All selected
-			- Move 'VSS' into 'Selected Objects'.
-		ii) Click 'Route' to run Automatic Router and click 'Close' after routing.
-	f) Open 'Cross Section Editor'.
-		Setup -> Cross-section
-	g) Change layer name 'VSS' to 'M4'.
-	h) Change layer type from 'Plane' to 'Conductor'.
-	i) Click 'OK'.
+	* Open 'Cross Section Editor'.
+	  - setup -> Cross-section
+	* Change layer name 'M4' to 'VSS'.
+	* Change layer type from 'Conductor' to 'Plane'.
+	* Click 'OK'.
+	* Run Automatic Router.
+	  - 'Selections' tab.
+	    * Objects to route: All selected
+	    * Move 'VSS' into 'Selected Objects'.
+	  - Click 'Route' to run Automatic Router and click 'Close' after routing.
+	* Open 'Cross Section Editor'.
+	  - Setup -> Cross-section
+	* Change layer name 'VSS' to 'M4'.
+	* Change layer type from 'Plane' to 'Conductor'.
+	* Click 'OK'.
 
 13. Save design.
 
 14. Generate and save design reports into ./result/ directory.
-	a) Wirelength report.
-		Reports -> Quick Reports -> Conductor Length by Pin Paire Report
-	b) Via usage report.
-		Reports -> Quick Reports -> Via List by Net Report
-	c) DRC report.
-		Reports -> Quick Reports -> Design Rules Check (DRC) Report
+	* Wirelength report.
+	  - Reports -> Quick Reports -> Conductor Length by Pin Paire Report
+	* Via usage report.
+	  - Reports -> Quick Reports -> Via List by Net Report
+	* DRC report.
+	  - Reports -> Quick Reports -> Design Rules Check (DRC) Report
