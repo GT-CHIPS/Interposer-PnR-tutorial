@@ -15,10 +15,9 @@ This work was supported by the DARPA CHIPS program.
 =====================================================
 Summary
 -----------------------------------------------------
-This standalone package shows an esample of how to use
+This standalone package shows an example of how to use
 Cadence SiP Layout to perform the basic chiplet PnR(place & route)
 on the interposer.
-This PnR concerns only signal routing, not power routing.
 The generated project file is *.sip, which contains
 all details of the design.
 All the files you need to generate the design are included
