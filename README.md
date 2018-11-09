@@ -67,8 +67,7 @@ Quick start
 
 1. Run the bash script from this home directory:
 	* bash ./script/bash_script/make_techfile.sh
-
-	- This will generate the techfile in ./script/techfile directory.
+	  - This will generate the techfile in ./script/techfile directory.
 
 	bash ./script/bash_script/make_sip_script.sh
 
