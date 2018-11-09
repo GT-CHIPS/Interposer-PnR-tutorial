@@ -1,4 +1,5 @@
-![alt text] (https://github.com/GT-CHIPS/Interposer-PnR-tutorial/blob/master/figure/7.%20Final%20interposer%20PnR%20result.JPG)
+![alt text] (https://raw.githubusercontent.com/GT-CHIPS/Interposer-PnR-tutorial/blob/master/figure/7.%20Final%20interposer%20PnR%20result.JPG)
+
 < The result of this tutorial >
 
 
