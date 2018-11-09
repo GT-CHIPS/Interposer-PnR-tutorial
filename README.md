@@ -1,3 +1,4 @@
+ ![Alt text](/figure/7. Final interposer PnR result.jpg)
  
 < The result of this tutorial >
 
